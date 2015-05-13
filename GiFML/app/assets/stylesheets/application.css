@@ -1,15 +1,63 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.name-tagline {
+  float: left;
+}
+
+h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 100px;
+  margin: 0px;
+  margin-bottom: -20px;
+}
+
+h3 {
+  font-family: 'Chewy', cursive;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 25px;
+}
+
+#user-input {
+  float: right;
+  margin-top: -100px;
+  margin-right: 400px;
+  display: inline-block;
+}
+
+#question {
+  font-family: 'Chewy', cursive;
+  font-size: 50px;
+  margin: 10px;
+}
+
+#name-button {
+  font-family: 'Chewy', cursive;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  margin: 10px;
+}
+
+.search-keyword {
+  font-size: 30px;
+  margin: 5px;
+}
+
+
+#gif-box {
+  margin-top: 2%;
+}
+
+.containers {
+  margin-left: 12.5%;
+}
+
+img {
+  height: 250px;
+  width: 350px;
+}
+
+@media (max-width: 600px) {
+  img {
+    -webkit-transform: scale(.5);
+  }
+}
