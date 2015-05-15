@@ -1,3 +1,19 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
 .name-tagline {
   float: left;
 }
@@ -9,6 +25,13 @@ h1 {
   margin-bottom: -20px;
 }
 
+h2 {
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 100px;
+  margin: 20px;
+}
+
 h3 {
   font-family: 'Chewy', cursive;
   margin-top: 0px;
@@ -16,45 +39,125 @@ h3 {
   margin-left: 25px;
 }
 
+#sign-in {
+  color: black;
+  float: right;
+  margin-top: -125px;
+  margin-right: 10px;
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+}
+
+.field {
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.actions {
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.actions input {
+  color: black;
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.sign-up-links {
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
 #user-input {
   float: right;
   margin-top: -100px;
-  margin-right: 400px;
+  margin-right: 450px;
   display: inline-block;
 }
 
 #question {
   font-family: 'Chewy', cursive;
-  font-size: 50px;
+  font-size: 45px;
   margin: 10px;
 }
 
-#name-button {
+#search-button {
   font-family: 'Chewy', cursive;
-  font-size: 15px;
+  font-size: 30px;
   border-radius: 5px;
   background-color: #32CD32;
   margin: 10px;
 }
 
+#save-button {
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  margin: 10px;
+  margin-left: 10px;
+  display: none;
+}
+
+#reset-button {
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  margin: 10px;
+  display: none;
+}
+
 .search-keyword {
-  font-size: 30px;
+  font-size: 20px;
   margin: 5px;
 }
 
 
-#gif-box {
+#gif-box1 {
   margin-top: 2%;
+  margin-left: 12.5%;
+}
+
+#gif-box2 {
+  margin-left: 12.5%;
+}
+
+#gif-box3 {
+  margin-left: 12.5%;
 }
 
 .containers {
-  margin-left: 12.5%;
+  display: inline-block;
 }
 
 img {
   height: 250px;
   width: 350px;
+  border: 5px solid black;
 }
+
+.showContainer {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  margin-left: -5%;
+  bottom: -12%;
+}
+
 
 @media (max-width: 600px) {
   img {
